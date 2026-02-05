@@ -4,14 +4,15 @@
 # from artwork import art_works
 
 from museum.artwork import art_works
+from museum.artist import artists
 
 def main():
     # Asks for artwork to see, prints artwork formatting
-    artwork = input("Artwork: ")
+    artists = input("Artists: ")
     limit = input("Limit you wanna see: ")
 
-    artworks = art_works(query=artwork, limit=limit)
-    for works in artworks:
+    artists = art_works(query=artists, limit=limit)
+    for works in artists:
         print(works)
 
 main()
